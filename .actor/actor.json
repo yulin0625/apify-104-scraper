@@ -1,0 +1,12 @@
+{
+  "actorSpecification": 1,
+  "name": "104-job-scraper",
+  "title": "104 Job Scraper",
+  "description": "Scrapes 104 HR bank for job postings",
+  "version": "0.0",
+  "meta": {
+    "templateId": "python-empty"
+  },
+  "input": "./INPUT_SCHEMA.json",
+  "dockerfile": "../Dockerfile"
+}

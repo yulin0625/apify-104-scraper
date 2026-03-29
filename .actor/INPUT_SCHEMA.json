@@ -1,0 +1,31 @@
+{
+  "title": "104 Job Scraper Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "keyword": {
+      "title": "Search Keyword",
+      "type": "string",
+      "description": "The search keyword for 104 human bank jobs",
+      "editor": "textfield",
+      "default": "UIUX"
+    },
+    "area": {
+      "title": "工作地區 (Location)",
+      "type": "string",
+      "description": "選擇篩選的工作地點",
+      "editor": "select",
+      "default": "6001001000,6001002000",
+      "enum": ["", "6001001000", "6001002000", "6001001000,6001002000"],
+      "enumTitles": ["不限", "台北市", "新北市", "大台北地區(雙北)"]
+    },
+    "max_jobs": {
+      "title": "Max Jobs to Scrape",
+      "type": "integer",
+      "description": "The maximum number of jobs to recursively scroll and scrape",
+      "editor": "number",
+      "default": 30
+    }
+  },
+  "required": ["keyword", "max_jobs"]
+}
